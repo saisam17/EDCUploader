@@ -28,4 +28,6 @@ def upload_file():
       #f.save(os.path.join(upload_folder, secure_filename(f.filename)))
       #fj_user = "username2"
       #fj_pass = "pwd2"
+      print(request.form)
+      print(request.form['sbhusername'])
       return render_template('upload_success.html', file_uploaded=secure_filename(f.filename))
