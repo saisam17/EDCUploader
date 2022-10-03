@@ -1,12 +1,24 @@
 <html>
-    <body>
-       <h1>File Upload</h1>
-       <p>Select a File to upload and press submit</p>
-       <form action = "/uploader" method = "POST" 
-          enctype = "multipart/form-data">
-          <input type = "file" name = "file" />
-          <input type = "submit"/>
-       </form>
-       <p><a href="/file_list">See All Uploaded Files</a></p>   
-    </body>
- </html>
+   <body>
+      <h1>File Upload</h1>
+      <p>Select a File to upload and press submit</p>
+      <form action = "/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <label for="username1"> UsernameSBH:</label><br>
+         <input type="text" id="username1" name="username1"><br>
+         <label for="pwd1">PasswordSBH:</label><br>
+         <input type="password" id="pwd1" name="pwd1">
+         <label for="username2"> UsernameFJ:</label><br>
+         <input type="text" id="username2" name="username2"><br>
+         <label for="pwd2">PasswordFJ:</label><br>
+         <input type="password" id="pwd2" name="pwd2">
+         <input type = "submit"/>
+      </form>
+      <p><a href="/file_list">See All Uploaded Files</a></p>   
+   </body>
+</html>
+
+
+
+
