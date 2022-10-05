@@ -5,8 +5,10 @@ import requests
 import os
       
 fj_url = "flapjack.rudge-lab.org:8000"
-fj_user = "sai"
+fj_user = "sai1"
 fj_pass = "123"
+sbj_pass = '456'
+sbh_user = 'sai2'
 
 direct = os.path.split(__file__)[0]
 file_path = os.path.join(direct, 'flapjack_excel_converter_v028.xlsx')
