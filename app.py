@@ -23,14 +23,11 @@ def upload_file_template():
 @app.route('/uploader', methods = ['POST'])
 def upload_file():
    if request.method == 'POST':
-      fj_url = "flapjack.rudge-lab.org:8000"
+
+
+      f = request.files['file']
       fj_user = request.form['fjusername']
       fj_pass = request.form['fjpwd']
-      with open(request.files['file']) as f:
-         hash_map=e2f.main.flapjack_upload(fj_url, fj_user, fj_pass, f)
-         print(hash_map)
-
-      #f = request.files['file']
 
       # hashmap = excel2flapjack.upload(f, fj_user, fj_pass)
       # file = excel2sbol(f)
